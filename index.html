@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <title>Task</title>
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    
+<!--Home Page  -->
+<section id="Home">
+    <div class="navbar">
+
+                <div class="logo">
+                    <h2>Sticky <span>Notes</span></h2>
+                </div>
+            <div class="menu">   
+                <ul>
+                    <li class="active" id="click">
+                        <i class="fas fa-chevron-down" id="More">
+                                More</i>                            
+                            <div class="dropDown" >
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="https://www.google.com/?hl=ar">Services</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                    <li class="more"><a href="#">More</a>
+                                    <!--  -->
+                                    <i class="arrow fas fa-angle-double-right"></i>
+                                    <ul class="multi-level">
+
+                                    <li><a href="#">Company</a></li>
+                                    <li><a href="https://www.google.com/?hl=ar">Features</a></li>
+                                    <li><a href="#">Software</a></li>
+                                    <li><a href="#">Tools</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                     </div>        
+                </li>
+            </ul>
+         </div>
+    </div>
+</section>
+
+<!--  carousel -->
+<section id="carousel">
+
+     <div class="slider">
+        <button class="btn button-previous" id="previous"><i class="fas fa-arrow-left"></i></button>
+        <div class="slider-imgs">
+
+            <img class="active" src="Images/portfolio-1.jpg"alt="img">
+            <h2 class="text">"Resentment is like drinking poison and waiting for your enemies to die."
+               <br> --Nelson Mandela</h2>
+            <img  src="Images/pexels-photo-92633.jpeg" alt="img">
+            <img  src="Images/portfolio-4.jpg" alt="img">
+            <img  src="Images/portfolio-3.jpg" alt="img">
+        
+        </div>
+        <button class="btn button-next" id="next"><i class="fas fa-arrow-right"></i></button>
+     </div>
+     
+
+      
+</section>
+
+<!-- Tabs -->
+<section id="tabs">
+
+        <ul id="my-tabs">
+            <li id="tab1">Tab1</li>
+            <li id="tab2" class="inactive">Tab2</li>
+            <li id="tab3" class="inactive">Tab3</li>
+            <li id="tab4" class="inactive">Tab4</li>
+        </ul>
+
+    <div id="tab1-content">
+        <h2 class="headerTab">“Be yourself; everyone else is already taken.”
+            <br>― Oscar Wilde</h2>
+        <img src="Images/branding-18-large.jpg" alt="img">
+    </div>
+    <div id="tab2-content">
+        <h2 class="headerTab">“A room without books is like a body without a soul.”
+           <br> ― Marcus Tullius Cicero</h2>
+        <img src="Images/bgs.jpg" alt="">
+    </div>
+    <div id="tab3-content">
+        <h2 class="headerTab">“You only live once, but if you do it right, once is enough.”
+            <br>― Mae West</h2>
+        <img src="Images/business-2.jpg" alt="img">
+    </div>
+    <div id="tab4-content">
+        <h2 class="headerTab">“Live as if you were to die tomorrow. Learn as if you were to live forever.”
+            <br>― Mahatma Gandhi</h2>
+        <img src="Images/bgs.jpg" alt="img">
+    </div>
+
+</section>
+
+
+<!-- Contacts -->
+<section id="contacts">
+
+
+            <h2>Contact Us</h2>    
+            <div class="left">
+                   
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.60389552709!2d31.32850511449987!3d30.059618470287788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2z2KfZhNmC2KfZh9ix2KnYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e0!3m2!1sar!2seg!4v1636601669747!5m2!1sar!2seg" width="620" height="450" style="border:0 ;" allowfullscreen="" loading="lazy"></iframe></p>
+            
+            </div>
+
+            <div class="right">
+
+                <input type="text" name="" placeholder="Name" class="input">
+                <input type="text" name="" placeholder="E-Mail" class="input">
+                <input type="text" name="" placeholder="Phone" class="input">
+                <textarea name="" class="input" placeholder="Message" id="Message"></textarea>
+                <br>
+
+                <button type="submit">
+                    <i class="fas fa-paper-plane "></i>
+                    Sent Message
+                </button>
+
+            </div>
+
+        <!-- Scroll -->
+        <i class="fas fa-arrow-up" id="arrow-up"></i>
+
+</section>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

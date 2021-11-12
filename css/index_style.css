@@ -1,0 +1,499 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+#Home
+{
+    height: 100vh;
+    background-image: url(../Images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(188, 188, 228, 0.6);
+    position: fixed;
+    width: 100%;
+   
+}
+
+.navbar .logo h2
+{
+    font-size: 30px;
+    padding: 14px;
+    color: rgb(172, 33, 33);
+    font-family:sans-serif;
+} 
+
+span
+{
+    color: rgb(66, 64, 138);
+}
+
+.menu ul
+{
+    margin-right:100px;
+
+}
+
+.menu ul li
+{
+
+    display: inline-block;
+    padding: 15px 5px;
+    font-size: 20px;
+    list-style: none;    
+    font-size: 24px;
+}
+
+.fa-bars
+{
+    font-size: 30px;
+    color: rgb(105, 25, 25);
+    
+}
+
+.menu ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,.menu ul li:hover
+{
+    border-radius: 12px;
+    
+}
+
+.dropDown
+{
+    display: none;
+}
+
+.menu ul li:hover .dropDown
+{
+    display: block;
+    position: absolute;
+    background-color: rgb(122, 135, 243);
+    margin-top: 15px;
+    margin-left: -15;
+    opacity: 0.7;      
+}
+
+.menu ul li:hover .dropDown ul li
+{
+    display: block;
+    margin-left: 26px;  
+    background-color: transparent;  
+    border-bottom:solid 2px rgb(15, 14, 15);
+    border-radius: 0;
+    padding: 10px 0;
+    cursor: pointer;
+    
+}
+
+.menu ul li:hover .dropDown ul li a:hover
+{
+    color: black;
+}
+
+/* level two */
+
+.multi-level 
+{
+    display: none;
+}
+
+.dropDown ul li:hover .multi-level 
+{
+    display: block;
+    position: absolute;
+    background-color: #01497c;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 220px;
+    opacity: 0.8;
+    overflow: hidden;
+}
+.arrow 
+{
+    font-size: 18px;
+}
+
+#More
+{
+    color:#03045e;
+}
+
+.dropDown ul .more
+{
+    cursor: pointer;
+    color: #003566;
+}
+
+/* sliders */
+
+#carousel
+{
+    height: 100vh;
+
+}
+
+body
+{
+     background-color: #f1f1f1;
+    
+}
+
+.slider
+{
+    align-items: center;
+    display: flex;
+    margin: 2rem auto;
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+    
+
+}
+
+.slider .slider-imgs
+{
+    display: flex;
+    transform: translateX(0); 
+    transition: transform 0.25s; 
+    position: relative;
+}
+
+.text
+{
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    color: #004e89;
+}
+
+.slider .slider-imgs img
+{
+    border-radius: 10px;
+}
+
+.slider .button-previous
+{
+   
+    border: 0;
+    border-radius: 50px;
+    color: rgb(109, 48, 223);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight:bold;
+    height: 3rem;
+    opacity: 1;
+    position: absolute;
+    transition: opacity 0.25s;
+    width: 3rem;
+    z-index: 1;
+    left: 5px;
+}
+
+#next:hover
+{
+    opacity: 0.5;
+}
+
+
+#previous:hover
+{
+    opacity: 0.5;
+}
+
+
+.slider .button-next
+{
+    border: 0;
+    border-radius: 50px;
+    color: rgb(109, 48, 223);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight:bold;
+    height: 3rem;
+    opacity: 1;
+    position: absolute;
+    transition: opacity 0.25s;
+    width: 3rem;
+    z-index: 1;
+    right: 5px;
+}
+
+.slider .slider-imgs img
+{
+    width: 100%;
+    height: 100%;
+    display:block;
+}
+
+/* sliders */
+
+
+/* Tabs  */
+
+#tabs
+{
+    margin: 50px auto;
+    width: 900px;
+    text-align:center;
+    position: relative;
+    background-color: transparent;
+    
+}
+
+#tabs img
+{
+    width:100%;
+    height:100%;
+}
+
+.headerTab
+{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    color:#004e89;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#my-tabs li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 0px 2px;
+    background-color: #eee;
+    text-align: center;
+    cursor: pointer;
+}
+
+#my-tabs .inactive
+{
+    background-color: #ccc;
+}
+
+#tabs div
+{
+    background-color: #eee;
+    padding: 10px;
+    height: 500px;
+
+}
+
+#tabs div:not(:first-of-type)
+{
+    display: none;
+}
+
+/* Tabs  */
+
+
+/* Contacts */
+#contacts
+{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-color: #f1f1f1;
+    
+}
+
+#contacts h2
+{
+    position: absolute;
+    top: -60px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    font-family:sans-serif;
+    color:rgb(122, 135, 243);
+    text-shadow: tomato;
+}
+
+#contacts .right
+{
+    width: 50%;
+    height: 600px;
+    text-align: center;
+}
+
+#contacts .right .input
+{
+
+    width: 100%;
+    padding: 14px 18px;
+    margin: 4px;
+    color: #a6a6a6;
+    border-radius: 3px;
+    border: 2px solid #eee;
+    background-color: #fff;
+}
+
+.right button
+{
+    width: 160px;
+    height: 35px;
+    background-color: #f25454;
+    font-weight: 500;
+    border: 2px solid transparent;
+}
+
+.right button:hover
+{
+    opacity: 0.6;
+    cursor: pointer;
+    background-color: #09c;
+    border-radius: 8px;
+    color: #FFF;
+}
+
+#contacts .right .input:hover
+{
+    border: 1px solid #09c;
+}
+
+#Message
+{
+    resize: none;
+    height: 240px;
+}
+#arrow-up
+{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    background-color: turquoise;
+    width: 70px;
+    height: 70px;
+    border-radius:25px ;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 12px;
+    position: fixed;
+    display: none;
+    cursor: pointer;
+}
+
+/* Contacts */
+
+
+/* animation */
+.menu ul li:hover .dropDown ul
+{
+    perspective: 1000px;
+}
+
+.menu ul li:hover .dropDown ul li
+{
+    transform-origin:top center;
+    opacity: 0;
+}
+
+.menu ul li:hover .dropDown ul li:nth-child(1)
+{
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 0;
+}
+
+.menu ul li:hover .dropDown ul li:nth-child(2)
+{
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 150ms;
+}
+
+.menu ul li:hover > .dropDown ul li:nth-child(3)
+{
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 300ms;
+}
+
+.menu ul li:hover > .dropDown ul li:nth-child(4)
+{
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 450ms;
+}
+
+@keyframes animate{
+    0%{
+
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+
+    50%{
+
+        transform: rotateX(20deg);
+        
+    }
+
+    100%{
+        
+        opacity: 1;
+        transform: rotateX(0deg);
+        
+    }
+}
+
+
+/* Media Queries */
+@media  screen and (max-width :600px) 
+{
+    .slider
+    {
+      width: 300px;
+    }
+
+    #tabs
+    {
+        width: 450px;
+       
+    }
+
+    .headerTab
+    {
+        left: 3px;
+        color:#183c57;
+        font-size: 16px;
+    }
+
+    iframe
+    {
+    width: 400px;
+    display: block;
+
+    }
+    
+    .right
+    {
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 0%;
+        
+    }
+
+    .menu i
+    {
+        display: flex;
+        margin: 0px;
+        padding: 0;
+    }
+
+  
+
+}
+
